@@ -12,18 +12,9 @@ export class AppService {
   ) {
 
   }
-
-  // getData() {
-  //   return this.http.get('http://www.mocky.io/v2/5c9105cb330000112b649af8')     
-  //   .pipe(
-  //      retry(1),
-  //      catchError(this.handleError)
-  //    );;
-  // }
-
   
   getData() {
-    return this.http.get('http://www.mocky.io/v2/5c9105cb330000112b649af8',{observe: 'response'});
+    return this.http.get('https://www.mocky.io/v2/5c9105cb330000112b649af8',{observe: 'response'});
   }
    handleError(error) {
    let errorMessage = '';

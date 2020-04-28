@@ -2,7 +2,6 @@ import { Component, OnInit, ViewChild, Renderer2 , ChangeDetectorRef,AfterViewIn
 import { AppService } from './service/app.service';
 import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { FormGroup, FormBuilder, Validators, AbstractControl, FormControl } from '@angular/forms';
-import { Product,Dropdown } from 'src/app/model/product';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import {Observable} from 'rxjs';
 import {debounceTime, distinctUntilChanged, map} from 'rxjs/operators';
@@ -76,9 +75,6 @@ constructor(private api: AppService,private config: NgbModalConfig
 	}
  
     filter(event,selectedFurniture,selectedDelivery){
-    	console.log(event)
-    	console.log(selectedFurniture)
-    	console.log(selectedDelivery)
     	if(selectedFurniture.length === 0 && selectedDelivery.length === 0){
     		this.display=[];
     		if(event !== ''){

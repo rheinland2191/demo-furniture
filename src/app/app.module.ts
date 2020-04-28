@@ -8,12 +8,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
-import { CustomPipe } from './pipe/custom.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CustomPipe
+    AppComponent
   ],
   imports: [
     BrowserModule,
